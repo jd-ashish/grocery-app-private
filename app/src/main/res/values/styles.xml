@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Widget.Theme.OnlineGroceriesApp.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.OnlineGroceriesApp.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemBackground">@color/white</item>
+        <item name="itemIconTint">@color/start_bg_color</item>
+        <item name="itemTextColor">@color/start_bg_color</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNavigation.Overline</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.BottomNavigation.Overline</item>
+        <item name="textAllCaps">true</item>
+        <item name="paddingStart">32dp</item>
+        <item name="paddingEnd">32dp</item>
+    </style>
+
+    <style name="TextAppearance.BottomNavigation.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textSize">8sp</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#B3B3B3</item>
+        <item name="colorControlActivated">@color/start_bg_color</item>
+    </style>
+    <style name="MyCustomRadioButton" parent="@android:style/TextAppearance">
+        <item name="android:paddingStart" tools:ignore="NewApi">6dp</item>
+        <item name="android:paddingEnd" tools:ignore="NewApi">6dp</item>
+        <item name="android:textColor">@drawable/selectable_text_color_checked_state</item>
+        <item name="android:background">@drawable/selectable_text_bg_color_checked_state</item>
+    </style>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_end_8">8dp</dimen>
+    <dimen name="padding_end_15">15dp</dimen>
+    <dimen name="padding_end_20">20dp</dimen>
+    <dimen name="padding_end_25">25dp</dimen>
+    <dimen name="padding_end_30">30dp</dimen>
+    <dimen name="padding_end_35">35dp</dimen>
+    <dimen name="padding_end_40">40dp</dimen>
+    <dimen name="padding_end_45">45dp</dimen>
+    <dimen name="padding_end_50">50dp</dimen>
+    <dimen name="padding_end_55">55dp</dimen>
+    <dimen name="padding_end_60">60dp</dimen>
+    <dimen name="padding_end_65">65dp</dimen>
+    <dimen name="padding_end_70">70dp</dimen>
+
+    <dimen name="padding_top_8">8dp</dimen>
+    <dimen name="padding_top_15">15dp</dimen>
+    <dimen name="padding_top_20">20dp</dimen>
+    <dimen name="padding_top_25">25dp</dimen>
+    <dimen name="padding_top_30">30dp</dimen>
+    <dimen name="padding_top_35">35dp</dimen>
+    <dimen name="padding_top_40">40dp</dimen>
+    <dimen name="padding_top_45">45dp</dimen>
+    <dimen name="padding_top_50">50dp</dimen>
+    <dimen name="padding_top_55">55dp</dimen>
+    <dimen name="padding_top_60">60dp</dimen>
+    <dimen name="padding_top_65">65dp</dimen>
+    <dimen name="padding_top_70">70dp</dimen>
+
+    <dimen name="padding_bottom_8">8dp</dimen>
+    <dimen name="padding_bottom_15">15dp</dimen>
+    <dimen name="padding_bottom_20">20dp</dimen>
+    <dimen name="padding_bottom_25">25dp</dimen>
+    <dimen name="padding_bottom_30">30dp</dimen>
+    <dimen name="padding_bottom_35">35dp</dimen>
+    <dimen name="padding_bottom_40">40dp</dimen>
+    <dimen name="padding_bottom_45">45dp</dimen>
+    <dimen name="padding_bottom_50">50dp</dimen>
+    <dimen name="padding_bottom_55">55dp</dimen>
+    <dimen name="padding_bottom_60">60dp</dimen>
+    <dimen name="padding_bottom_65">65dp</dimen>
+    <dimen name="padding_bottom_70">70dp</dimen>
+
+    <dimen name="padding_start_8">8dp</dimen>
+    <dimen name="padding_start_15">15dp</dimen>
+    <dimen name="padding_start_20">20dp</dimen>
+    <dimen name="padding_start_25">25dp</dimen>
+    <dimen name="padding_start_30">30dp</dimen>
+    <dimen name="padding_start_35">35dp</dimen>
+    <dimen name="padding_start_40">40dp</dimen>
+    <dimen name="padding_start_45">45dp</dimen>
+    <dimen name="padding_start_50">50dp</dimen>
+    <dimen name="padding_start_55">55dp</dimen>
+    <dimen name="padding_start_60">60dp</dimen>
+    <dimen name="padding_start_65">65dp</dimen>
+    <dimen name="padding_start_70">70dp</dimen>
+</resources>

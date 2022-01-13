@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.apps.onlinegroceriesapps.CustomView.CustomViewSingleLineTwoText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_top_8"
+        app:text_left="Price"
+        app:text_left_size="16"
+        app:right_icon="@drawable/ic_back_arrow"
+        app:layout_constraintTop_toBottomOf="@id/test"
+        app:text_right="view" />
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/priceWise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        >
+        <com.google.android.material.chip.Chip
+            style="@style/ChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/ic_checked_chip"
+            app:checkedIcon="@drawable/ic_checked_chip"
+            android:text="Low To High"/>
+        <com.google.android.material.chip.Chip
+            style="@style/ChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/ic_checked_chip"
+            app:checkedIcon="@drawable/ic_checked_chip"
+            android:text="High To Low"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.apps.onlinegroceriesapps.CustomView.CustomViewSingleLineTwoText
+        android:id="@+id/date_wise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_top_8"
+        app:text_left="Date"
+        app:text_left_size="16"
+        app:right_icon="@drawable/ic_back_arrow"
+        app:layout_constraintTop_toBottomOf="@id/test"
+        app:text_right="view" />
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/date_wise_grp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        >
+        <com.google.android.material.chip.Chip
+            style="@style/ChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/ic_checked_chip"
+            app:checkedIcon="@drawable/ic_checked_chip"
+            android:text="New To Old"/>
+        <com.google.android.material.chip.Chip
+            style="@style/ChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/ic_checked_chip"
+            app:checkedIcon="@drawable/ic_checked_chip"
+            android:text="Odl To New"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/filter_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/cancel_btn"
+        android:text="Filter Now"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:layout_gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+</LinearLayout>

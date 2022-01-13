@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mask_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/get_your_gr"
+        style="@style/heading1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_start_15"
+        android:gravity="top"
+        android:lineSpacingExtra="0sp"
+        android:text="Get your groceries with nectar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/country_code"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rect_15"
+        android:gravity="center_vertical"
+        android:maxWidth="120dp"
+        app:layout_constraintStart_toStartOf="@+id/get_your_gr"
+        app:layout_constraintTop_toBottomOf="@+id/get_your_gr" />
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/or_connect_with_social_media"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="140dp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/margin_top_15"
+        android:hint="@string/phone"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/country_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/country_code"
+        app:layout_constraintTop_toTopOf="@+id/country_code"
+        app:startIconContentDescription="Phone" />
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_top_30"
+        android:layout_marginEnd="@dimen/margin_top_15"
+        android:background="@drawable/rect_15"
+        android:gravity="center"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/margin_start_20"
+        android:layout_marginEnd="@dimen/margin_end_20"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_code" />
+
+    <TextView
+        android:id="@+id/or_connect_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_30"
+        android:gravity="center_horizontal|top"
+        android:text="@string/or_connect_with_social_media"
+        android:textAppearance="@style/or_connect_with_social_media"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_30"
+        android:layout_marginStart="@dimen/margin_start_70"
+        android:layout_marginEnd="@dimen/margin_end_70"
+        android:background="@drawable/rect_15"
+        android:backgroundTint="#5383EC"
+        android:drawableStart="@drawable/ic_google"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:text="@string/continue_with_google"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or_connect_" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_70"
+        android:layout_marginEnd="@dimen/margin_end_70"
+        android:background="@drawable/rect_15"
+        android:backgroundTint="#4A66AC"
+        android:drawableStart="@drawable/ic_fb"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:text="@string/continue_with_facebook"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

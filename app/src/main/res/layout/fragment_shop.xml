@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/default_padding"
+    tools:context=".fragment.ShopFragment">
+
+    <TextView
+        android:id="@+id/my_location"
+        style="@style/location_title_shop_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_location_v2"
+        android:drawableEnd="@drawable/ccp_ic_arrow_drop_down"
+        android:drawablePadding="@dimen/margin_top_8"
+        android:drawableTint="@color/start_bg_color"
+        android:gravity="center"
+        android:text="location,address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:background="@drawable/rect_10"
+        android:backgroundTint="#F6F5F5"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/default_padding"
+        android:drawableTint="@color/black"
+        android:padding="@dimen/default_padding"
+        android:text="@string/search_here"
+        android:enabled="false"
+        android:textColor="#7C7C7C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_location"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <View
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:background="@drawable/rect_10"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_location" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_top_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/SliderView"
+                layout="@layout/commom_layout_slider_view" />
+
+
+            <com.apps.onlinegroceriesapps.CustomView.CustomViewSingleLineTwoText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_15"
+                app:text_left="@string/exclusive_offer"
+                app:text_right="@string/see_all" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exclusiveOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/product_card_layout_1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exclusiveOfferCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/product_card_layout_1" />
+
+            <com.apps.onlinegroceriesapps.CustomView.CustomViewSingleLineTwoText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_15"
+                app:text_left="Best Selling"
+                app:text_right="@string/see_all" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bestSelling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/product_card_layout_1" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

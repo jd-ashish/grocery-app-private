@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingEnd="@dimen/default_padding"
+    android:paddingStart="@dimen/default_padding"
+    android:paddingTop="@dimen/margin_top_8"
+    android:paddingBottom="@dimen/margin_top_8">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="@dimen/margin_top_15"
+        android:src="@drawable/banana"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="170dp"
+        android:layout_marginStart="@dimen/margin_start_15"
+        android:text="product title of fish combination combination combination "
+        android:lines="1"
+        android:ellipsize="end"
+        android:textAppearance="@style/product_title"
+        app:layout_constraintStart_toEndOf="@+id/productImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2sp"
+        android:text="12 pcs , prices"
+        android:textAppearance="@style/product_title_h2"
+        app:layout_constraintStart_toStartOf="@+id/product_title"
+        app:layout_constraintTop_toBottomOf="@+id/product_title" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:gravity="center"
+        android:text="00.00"
+        android:textAppearance="@style/product_title"
+        app:layout_constraintBottom_toBottomOf="@+id/inc_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toBottomOf="@+id/h2" />
+
+    <ImageView
+        android:id="@+id/remove_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cross"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/desc_cart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/margin_start_15"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:src="@drawable/ic_negative"
+        app:layout_constraintStart_toEndOf="@+id/productImage"
+        app:layout_constraintTop_toBottomOf="@+id/h2" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rect_15"
+        android:gravity="center"
+        android:text="55"
+        app:layout_constraintBottom_toBottomOf="@+id/desc_cart"
+        app:layout_constraintStart_toEndOf="@+id/desc_cart"
+        app:layout_constraintTop_toTopOf="@+id/desc_cart" />
+
+    <ImageView
+        android:id="@+id/inc_cart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintBottom_toBottomOf="@+id/desc_cart"
+        app:layout_constraintStart_toEndOf="@+id/qty"
+        app:layout_constraintTop_toTopOf="@+id/desc_cart" />
+
+    <View
+        android:id="@+id/hr_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_top_8"
+        android:background="#E2E2E2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qty" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="location_title_shop_fragment">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#4C4F4D</item>
+    </style>
+    <style name="offer_head">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#181725</item>
+    </style>
+    <style name="offer_head_align">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#53B175</item>
+    </style>
+    <style name="product_title">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#181725</item>
+    </style>
+    <style name="profile_list_title">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#181725</item>
+    </style>
+    <style name="product_title_h2">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#7C7C7C</item>
+    </style>
+
+    <style name="cart_name_head">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#646464</item>
+    </style>
+
+    <style name="cart_name_head_desc">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#9C9C9C</item>
+    </style>
+
+    <style name="cart_list_style">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#7C7C7C</item>
+    </style>
+    <style name="cart_list_value_style">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#181725</item>
+    </style>
+
+    <style name="your_order_">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#181725</item>
+    </style>
+
+    <style name="h2">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#7C7C7C</item>
+    </style>
+    <style name="back_to_hom">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#181725</item>
+    </style>
+</resources>

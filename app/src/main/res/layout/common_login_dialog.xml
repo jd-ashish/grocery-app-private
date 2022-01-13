@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:padding="15sp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20sp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginStart="@dimen/margin_top_15"
+        android:layout_marginEnd="@dimen/margin_top_15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/warnign"
+            style="@style/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warnign"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_need_to_login_first_would_you_like_to_login_now"
+            android:textSize="14sp"
+            android:textColor="@color/grey"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ok"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:layout_marginBottom="@dimen/margin_bottom_15"
+            android:background="@drawable/rect_15"
+            android:backgroundTint="@color/start_bg_color"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/yes"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cancel"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            tools:ignore="SmallSp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel"
+            style="@style/cancel_btn"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            app:cornerRadius="@dimen/margin_start_8"
+            app:layout_constraintBottom_toBottomOf="@+id/ok"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ok"
+            app:layout_constraintTop_toTopOf="@+id/ok" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

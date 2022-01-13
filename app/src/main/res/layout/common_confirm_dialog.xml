@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="268sp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:padding="15sp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20sp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_common_confirm" />
+
+        <TextView
+            android:id="@+id/mssgBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:maxWidth="200sp"
+            android:text="Sure ?"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rect_15"
+                android:backgroundTint="@color/start_bg_color"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/yes"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10sp"
+                style="@style/cancel_btn"
+                app:cornerRadius="@dimen/margin_start_8"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/cancel"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

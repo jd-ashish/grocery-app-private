@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.order.TrackOrderActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar_layout"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_small_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:text="Other Details"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/order_list" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/cart_name_head_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Ashish kumar"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/phone"
+                style="@style/cart_name_head_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No: 7079692988"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/cart_name_head_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: Bhowrra machhata chowk near pani tanki , madhubani , 847212 , India"
+                app:layout_constraintStart_toStartOf="@+id/phone"
+                app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+            <TextView
+                android:id="@+id/currentstatus"
+                style="@style/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:text="Current Order status"
+                app:layout_constraintStart_toStartOf="@+id/address"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <TextView
+                android:id="@+id/order_current_status"
+                style="@style/cart_name_head_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="success"
+                app:layout_constraintStart_toStartOf="@+id/currentstatus"
+                app:layout_constraintTop_toBottomOf="@+id/currentstatus" />
+
+            <TextView
+                android:id="@+id/lastUpdate"
+                style="@style/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:text="Order Last update"
+                app:layout_constraintStart_toStartOf="@+id/order_current_status"
+                app:layout_constraintTop_toBottomOf="@+id/order_current_status" />
+
+            <TextView
+                android:id="@+id/orderlastUpdate"
+                style="@style/cart_name_head_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="now"
+                app:layout_constraintStart_toStartOf="@+id/lastUpdate"
+                app:layout_constraintTop_toBottomOf="@+id/lastUpdate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/order_canceled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_15"
+        android:layout_marginEnd="@dimen/margin_end_15"
+        android:text="Cancel order ?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.screen.LoginPhoneActivity"
+    android:padding="@dimen/default_padding">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enter_your_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_30"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/enter_your_mobile_number"
+        android:textAppearance="@style/heading1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/mobile_numb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_25"
+        android:lineSpacingExtra="9sp"
+        android:text="@string/mobile_number"
+        android:textAppearance="@style/mobile_numb"
+        android:translationY="-4.7sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_your_" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/country_code"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rect_15"
+        android:gravity="center_vertical"
+        android:maxWidth="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_numb" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="@dimen/margin_top_15"
+        android:layout_marginTop="-7dp"
+        android:background="@drawable/rect_15"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/country_code"
+        app:layout_constraintTop_toTopOf="@+id/country_code"
+        app:startIconContentDescription="Phone"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:background="@drawable/rect_15"
+            android:focusable="true"
+            android:letterSpacing=".5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginEnd="@dimen/margin_end_20"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/country_code"
+        app:layout_constraintTop_toBottomOf="@+id/country_code" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:fitsSystemWindows="true"
+        android:backgroundTint="@color/start_bg_color"
+        android:rotation="180"
+        android:src="@drawable/ic_back"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

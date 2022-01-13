@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Online Groceries App</string>
+    <string name="welcome_to_shope">Welcome \nto Online Groceries App </string>
+    <string name="ger_your_groceries_in_as_fast_as_one_hour">Ger your groceries in as fast as one hour</string>
+    <string name="get_started">Get Started</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="phone">Phone</string>
+    <string name="continue_with_facebook">Continue with facebook</string>
+    <string name="continue_with_google">Continue with google</string>
+    <string name="or_connect_with_social_media">Or connect with social media</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="enter_your_6_digit_code">Enter your 6-digit code</string>
+    <string name="otp">OTP</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="received_message">Received Message</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_address_select">AddressSelectActivity</string>
+    <string name="select_delivery_location">SELECT DELIVERY LOCATION</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="exclusive_offer">Exclusive Offer</string>
+    <string name="see_all">See all</string>
+    <string name="find_products">Find Products</string>
+    <string name="search_here">Search Here</string>
+    <string name="my_cart">My Cart</string>
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="looks_like_your_cart_is_empty_explore_more_services_through_category">Looks like your cart is empty.\nExplore more services through category.</string>
+    <string name="long_text">It worked for me! And it applied color, size, gravity, etc. I\'ve used it on handsets and tablets with Android API Levels from 8 to 17 with no problems. Note that as of Android 23, that method has been deprecated. The context argument has been dropped, so the last line would need to be:</string>
+    <string name="checkout">Checkout</string>
+    <string name="delivery">Delivery</string>
+    <string name="select_method">Select Method</string>
+    <string name="payment">Payment</string>
+    <string name="online">Online</string>
+    <string name="Promocode">promocode</string>
+    <string name="select_payment_options">Select Payment Options</string>
+    <string name="your_order_has_been_accepted">Your Order has been accepted</string>
+    <string name="your_items_has_been_placcd_and_is_on_it_s_way_to_being_processed">Your items has been placcd and is on it’s way to being processed</string>
+    <string name="all_order">All order</string>
+    <string name="pending_order">Pending</string>
+    <string name="inprogress_order">In Progress</string>
+    <string name="delivered_order">Delivered</string>
+    <string name="shipped">Shipped</string>
+    <string name="order_tracking">Order Tracking</string>
+    <string name="cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="you_need_to_login_first_would_you_like_to_login_now">You need to login first. Would you like to login now ?</string>
+    <string name="add_another_address">Add another address</string>
+</resources>

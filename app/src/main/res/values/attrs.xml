@@ -1,0 +1,22 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CustomViewSingleLineTwoText">
+        <attr name="text_left" format="string"/>
+        <attr name="text_right" format="string"/>
+        <attr name="right_icon" format="reference"/>
+        <attr name="text_color" format="reference"/>
+        <attr name="text_left_size" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="CustomViewThreeInOne">
+        <attr name="title_tio" format="string"/>
+        <attr name="left_icon_tio" format="reference"/>
+        <attr name="right_icon_tio" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CustomViewCheckOutList">
+        <attr name="right_text_col" format="string" localization="suggested"/>
+        <attr name="left_text_icon_col" format="string" localization="suggested"/>
+    </declare-styleable>
+</resources>

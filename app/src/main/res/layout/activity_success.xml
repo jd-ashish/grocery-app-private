@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.order.SuccessActivity">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_order_accepted"
+        android:layout_marginEnd="@dimen/margin_end_30"
+        android:layout_marginBottom="@dimen/margin_bottom_70"
+        app:layout_constraintBottom_toTopOf="@+id/trackOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/your_order_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:layout_marginEnd="@dimen/margin_end_15"
+        android:layout_marginStart="@dimen/margin_start_15"
+        android:gravity="center_horizontal|top"
+        android:text="@string/your_order_has_been_accepted"
+        android:textAppearance="@style/your_order_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_end_15"
+        android:layout_marginStart="@dimen/margin_start_15"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/your_items_has_been_placcd_and_is_on_it_s_way_to_being_processed"
+        android:textAppearance="@style/h2"
+        app:layout_constraintTop_toBottomOf="@+id/your_order_" />
+
+    <TextView
+        android:id="@+id/trackOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_20"
+        android:layout_marginEnd="@dimen/margin_end_20"
+        android:layout_marginBottom="@dimen/margin_bottom_20"
+        android:background="@drawable/rect_15"
+        android:backgroundTint="@color/start_bg_color"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:text="Track Order"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/backToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/backToHome"
+        style="@style/back_to_hom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_20"
+        android:layout_marginEnd="@dimen/margin_end_20"
+        android:layout_marginBottom="@dimen/margin_bottom_30"
+        android:background="@drawable/rect_15"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:text="Back To Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

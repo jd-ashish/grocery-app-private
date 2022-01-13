@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text="@string/exclusive_offer"
+        android:textAppearance="@style/offer_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_all"
+        android:textAppearance="@style/offer_head_align"
+        app:layout_constraintBottom_toBottomOf="@+id/text_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_left" />
+
+    <ImageView
+        android:id="@+id/arrow_down"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_back_arrow"
+        android:rotation="180"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/text_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_left"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
