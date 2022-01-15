@@ -20,6 +20,9 @@
         android:usesCleartextTraffic="true"
         tools:node="merge">
         <activity
+            android:name=".activity.WebViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.NotificationActivity"
             android:exported="false" />
         <activity

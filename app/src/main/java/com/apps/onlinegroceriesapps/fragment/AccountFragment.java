@@ -16,6 +16,7 @@ import com.apps.onlinegroceriesapps.activity.NotificationActivity;
 import com.apps.onlinegroceriesapps.activity.OrdersActivity;
 import com.apps.onlinegroceriesapps.activity.SearchActivity;
 import com.apps.onlinegroceriesapps.activity.SplashscreenActivity;
+import com.apps.onlinegroceriesapps.activity.WebViewActivity;
 import com.apps.onlinegroceriesapps.activity.profile.UpdateUserProfileActivity;
 import com.apps.onlinegroceriesapps.activity.screen.AddressSelectActivity;
 import com.apps.onlinegroceriesapps.activity.screen.LoginOtpActivity;
@@ -31,6 +32,7 @@ import com.apps.onlinegroceriesapps.databinding.FragmentAccountBinding;
 import com.apps.onlinegroceriesapps.databinding.FragmentCartBinding;
 import com.apps.onlinegroceriesapps.models.UserModel;
 import com.apps.onlinegroceriesapps.utils.BottomSheet.AddressList;
+import com.apps.onlinegroceriesapps.utils.Constent;
 import com.apps.onlinegroceriesapps.utils.GenericDelay;
 import com.apps.onlinegroceriesapps.utils.LoadingSpinner;
 import com.apps.onlinegroceriesapps.utils.UserPrefs;
@@ -44,15 +46,16 @@ import java.util.Objects;
 public class AccountFragment extends Fragment {
 
     FragmentAccountBinding binding;
-    UserPrefs userPrefs ;
-    UserModel userModel ;
+    UserPrefs userPrefs;
+    UserModel userModel;
     UserResponseHelper helper;
     LoadingSpinner loadingSpinner;
     private LoginPhoneApiInterfaces apiService;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentAccountBinding.inflate(getLayoutInflater(),container,false);
+        binding = FragmentAccountBinding.inflate(getLayoutInflater(), container, false);
         initialized();
         ClickMethod();
         setUI();
@@ -61,14 +64,14 @@ public class AccountFragment extends Fragment {
 
     private void setUI() {
 
-        if(userModel!=null){
+        if (userModel != null) {
             new LoginByPhoneApiCall(requireContext(), new LoginByPhoneApiCall.LoginInterfaces() {
                 @Override
                 public void onLogin(UserModel body) {
-                    new UserPrefs(requireContext()).setAuthPreferenceObject(body,UserPrefs.users);
+                    new UserPrefs(requireContext()).setAuthPreferenceObject(body, UserPrefs.users);
                     Glide.with(requireContext()).load(userModel.getUser().getAvatar()).into(binding.circleImageView);
                 }
-            }).loginByUserId(loadingSpinner,apiService,userModel);
+            }).loginByUserId(loadingSpinner, apiService, userModel);
         }
 
     }
@@ -80,23 +83,44 @@ public class AccountFragment extends Fragment {
         helper = new UserResponseHelper(requireContext());
         loadingSpinner = new LoadingSpinner(requireContext());
     }
+
     private void ClickMethod() {
+        binding.aboutus.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), WebViewActivity.class).putExtra("form", "account")
+                    .putExtra("title", "About Us")
+                    .putExtra(Constent.ABOUT_US, userPrefs.getAppSettingsPreferenceObjectJson().getData().get(0).getAbout_us()));
+        });
+        binding.contactUs.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), WebViewActivity.class).putExtra("form", "account")
+                    .putExtra("title", "Contact Us")
+                    .putExtra(Constent.CONTACT_US, userPrefs.getAppSettingsPreferenceObjectJson().getData().get(0).getContact_us()));
+        });
+        binding.privacyPolicy.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), WebViewActivity.class).putExtra("form", "account")
+                    .putExtra("title", "Privacy Policy")
+                    .putExtra(Constent.PRIVACY_POLICY, userPrefs.getAppSettingsPreferenceObjectJson().getData().get(0).getPrivacy_policy()));
+        });
+        binding.termsConditions.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), WebViewActivity.class).putExtra("form", "account")
+                    .putExtra("title", "Terms And Conditions")
+                    .putExtra(Constent.TERMS_CONDITIONS, userPrefs.getAppSettingsPreferenceObjectJson().getData().get(0).getPrivacy_policy()));
+        });
         binding.order.setOnClickListener(v -> {
-            if(userModel==null){
+            if (userModel == null) {
                 helper.showLogin();
                 return;
             }
             startActivity(new Intent(requireContext(), OrdersActivity.class));
         });
         binding.updateAccount.setOnClickListener(v -> {
-            if(userModel==null){
+            if (userModel == null) {
                 helper.showLogin();
                 return;
             }
             startActivity(new Intent(requireContext(), UpdateUserProfileActivity.class));
         });
         binding.notification.setOnClickListener(v -> {
-            if(userModel==null){
+            if (userModel == null) {
                 helper.showLogin();
                 return;
             }
@@ -104,7 +128,7 @@ public class AccountFragment extends Fragment {
         });
 
         binding.logout.setOnClickListener(v -> {
-            if(userModel==null){
+            if (userModel == null) {
                 startActivity(new Intent(requireContext(), LoginActivity.class));
                 return;
             }

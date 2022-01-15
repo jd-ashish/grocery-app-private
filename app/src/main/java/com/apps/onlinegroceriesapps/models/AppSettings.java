@@ -65,6 +65,65 @@ public class AppSettings implements Serializable {
     @Expose
     private String exclusiveOfferType;
 
+    @SerializedName("privacy_policy")
+    @Expose
+    private String privacy_policy;
+
+    @SerializedName("terms_and_conditions")
+    @Expose
+    private String terms_and_conditions;
+
+    @SerializedName("return_policy")
+    @Expose
+    private String return_policy;
+
+    @SerializedName("contact_us")
+    @Expose
+    private String contact_us;
+
+    @SerializedName("about_us")
+    @Expose
+    private String about_us;
+
+    public String getPrivacy_policy() {
+        return privacy_policy;
+    }
+
+    public void setPrivacy_policy(String privacy_policy) {
+        this.privacy_policy = privacy_policy;
+    }
+
+    public String getTerms_and_conditions() {
+        return terms_and_conditions;
+    }
+
+    public void setTerms_and_conditions(String terms_and_conditions) {
+        this.terms_and_conditions = terms_and_conditions;
+    }
+
+    public String getReturn_policy() {
+        return return_policy;
+    }
+
+    public void setReturn_policy(String return_policy) {
+        this.return_policy = return_policy;
+    }
+
+    public String getContact_us() {
+        return contact_us;
+    }
+
+    public void setContact_us(String contact_us) {
+        this.contact_us = contact_us;
+    }
+
+    public String getAbout_us() {
+        return about_us;
+    }
+
+    public void setAbout_us(String about_us) {
+        this.about_us = about_us;
+    }
 
     public String getCod() {
         return cod;
