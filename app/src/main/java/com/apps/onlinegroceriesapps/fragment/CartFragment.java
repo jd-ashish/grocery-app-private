@@ -121,7 +121,7 @@ public class CartFragment extends Fragment implements CartInterfaces , CartInter
 
     private void GetCartList() {
         if(userModel==null){
-            helper.showLogin();
+//            helper.showLogin();
             return;
         }
         loadingSpinner.showLoading();

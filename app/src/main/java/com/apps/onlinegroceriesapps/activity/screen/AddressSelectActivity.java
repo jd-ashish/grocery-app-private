@@ -295,7 +295,10 @@ public class AddressSelectActivity extends FragmentActivity implements OnMapRead
             super.onLocationResult(locationResult);
             Log.d(TAG, "onLocationResult: " + locationResult.getLastLocation());
             if (mMap != null) {
-                setUserLocationMarker(locationResult.getLastLocation());
+                if(userModel.getUser()!=null){
+                    setUserLocationMarker(locationResult.getLastLocation());
+                }
+
             }
         }
     };

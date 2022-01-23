@@ -32,7 +32,9 @@ import com.apps.onlinegroceriesapps.R;
 import com.apps.onlinegroceriesapps.activity.order.SuccessActivity;
 import com.apps.onlinegroceriesapps.api.CommanApiCall.OrderCommonApiCall;
 import com.apps.onlinegroceriesapps.api.CommanApiCall.payment.CashFreeApiCall;
+import com.apps.onlinegroceriesapps.api.network.response.AppSettingsResponse;
 import com.apps.onlinegroceriesapps.databinding.BottomCheckoutLayoutBinding;
+import com.apps.onlinegroceriesapps.models.AppSettings;
 import com.apps.onlinegroceriesapps.models.CommonGlobalMessageModel;
 import com.apps.onlinegroceriesapps.models.PaymentModel;
 import com.apps.onlinegroceriesapps.models.UserAddressList;
@@ -81,6 +83,7 @@ public class Checkout {
     String months = null;
     String years = null;
     String cvvs = null;
+    AppSettings appSettings;
     enum SeamlessMode {
         CARD, WALLET, NET_BANKING, UPI_COLLECT, PAY_PAL
     }
@@ -102,6 +105,9 @@ public class Checkout {
         BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(context);
         binding = BottomCheckoutLayoutBinding.inflate(LayoutInflater.from(context));
         bottomSheetDialog.setContentView(binding.getRoot());
+        AppSettingsResponse appSettingsResponse = userPrefs.getAppSettingsPreferenceObjectJson();
+        appSettings = appSettingsResponse.getData().get(0);
+
         if(userPrefs.getDefaultAddress()!=null){
             userAddressList = userPrefs.getDefaultAddress();
             binding.delivery.setRight_text_icon(userPrefs.getDefaultAddress().getKnownName());
@@ -292,7 +298,8 @@ public class Checkout {
 
 
         final com.razorpay.Checkout co = new com.razorpay.Checkout();
-        co.setKeyID(Constent.RZP_KEY);
+        co.setKeyID(appSettings.getRzpDetails().getRZP_KEY());
+//        co.setKeyID(Constent.RZP_KEY);
 //        co.setKeyID(Constant_Api.RZP_KEY_ID);
         String preorder_id = null;
 
@@ -375,7 +382,7 @@ public class Checkout {
             String id = "";
             RazorpayClient razorpay = null;
             try {
-                razorpay = new RazorpayClient(Constent.RZP_KEY,Constent.RZP_SECRT);
+                razorpay = new RazorpayClient(appSettings.getRzpDetails().getRZP_KEY(),appSettings.getRzpDetails().getRZP_SECRT());
             } catch (RazorpayException e) {
                 e.printStackTrace();
             }

@@ -33,7 +33,7 @@ public class CartCommonApiCall {
 
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("product_id", product_id);
-        jsonObject.addProperty("product_stock_id", product_stock_id);
+        jsonObject.addProperty("product_stock_id", (product_stock_id.equals("0"))? "":product_stock_id);
         jsonObject.addProperty(Constent.PLATFORM_NAME, Constent.PLATFORM);
 
         Call<CommonGlobalMessageModel> call = apiService.updateCart(userModel.getToken_type()+" "+userModel.getAccess_token(),jsonObject);
@@ -61,7 +61,7 @@ public class CartCommonApiCall {
 
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("product_id", product_id);
-        jsonObject.addProperty("product_stock_id", product_stock_id);
+        jsonObject.addProperty("product_stock_id", (product_stock_id.equals("0"))? "":product_stock_id);
         jsonObject.addProperty("qty", qty);
         jsonObject.addProperty(Constent.PLATFORM_NAME, Constent.PLATFORM);
 

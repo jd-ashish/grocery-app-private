@@ -80,12 +80,17 @@ public class AddressListAdapter extends RecyclerView.Adapter<AddressListAdapter.
                 check.setVisibility(View.GONE);
             }
 
-            if(userPrefs.getDefaultAddress().getId()==data.getId()){
-                check.setVisibility(View.VISIBLE);
-            }
-            addressCard.setOnClickListener(v -> {
+            if(userPrefs.getDefaultAddress()!=null){
                 if(userPrefs.getDefaultAddress().getId()==data.getId()){
-                    check.setVisibility(View.GONE);
+                    check.setVisibility(View.VISIBLE);
+                }
+            }
+
+            addressCard.setOnClickListener(v -> {
+                if(userPrefs.getDefaultAddress()!=null){
+                    if(userPrefs.getDefaultAddress().getId()==data.getId()){
+                        check.setVisibility(View.VISIBLE);
+                    }
                 }
                 row_index = position;
                 notifyDataSetChanged();

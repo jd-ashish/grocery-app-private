@@ -26,6 +26,10 @@ public class SuccessActivity extends AppCompatActivity {
             startActivity(new Intent(SuccessActivity.this, MainActivity.class));
             finishAffinity();
         });
+        binding.trackOrder.setOnClickListener(v -> {
+            startActivity(new Intent(SuccessActivity.this, TrackOrderActivity.class));
+            finishAffinity();
+        });
     }
 
     @Override

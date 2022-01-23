@@ -98,10 +98,12 @@ public class MainActivity extends AppCompatActivity implements PaymentResultList
             String position = getIntent().getStringExtra("form_to");
 
 //            CustomToast.showToast(this, message, R.color.colorSuccess);
-            getIntent().removeExtra("position");
+//            String pos = getIntent().get("account");
 
             if(position.equals("explore")){
                 loadFragment(exploreFragment);
+            }else if(position.equals("account")){
+                loadFragment(accountFragment);
             }
         }
     }

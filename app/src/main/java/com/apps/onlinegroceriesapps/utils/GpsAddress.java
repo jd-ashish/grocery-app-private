@@ -53,7 +53,9 @@ public class GpsAddress {
         jsonObject.addProperty("longitude",longitude);
         jsonObject.addProperty("lattitude",lattitude);
         UserModel userModel = userPrefs.getAuthPreferenceObjectJson(UserPrefs.users);
-        jsonObject.addProperty("user_id", userModel.getUser().getId());
+        if(userModel!=null){
+            jsonObject.addProperty("user_id", userModel.getUser().getId());
+        }
         new UserPrefs(context).setGpsAddress(jsonObject);
         System.out.println("sgdcvsgfvdgshfgdhsgfhjdghs "+new Gson().toJson(jsonObject));
 //        userPrefs.setGpsAddress(gps_address.toString());

@@ -3,6 +3,9 @@ package com.apps.onlinegroceriesapps.notifications;
 import android.content.Intent;
 import android.util.Log;
 
+import com.apps.onlinegroceriesapps.activity.MainActivity;
+import com.apps.onlinegroceriesapps.activity.ProductDetailsActivity;
+import com.apps.onlinegroceriesapps.activity.ProductListActivity;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import org.json.JSONException;
@@ -40,12 +43,17 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             Intent intent = null;
 
 
-//            if (type.toLowerCase().equals("account")) {
-//                intent = new Intent(getApplicationContext(), MainActivity.class);
+            if (type.toLowerCase().equals("account")) {
+                intent = new Intent(getApplicationContext(), MainActivity.class);
 //                intent.putExtra("message", "");
-//                intent.putExtra("position", "account");
-//
-//            } else  if (type.equals("order_cancel")) {
+                intent.putExtra("form_to", "account");
+
+            } else if (type.equals("products")) {
+                intent = new Intent(getApplicationContext(), ProductDetailsActivity.class);
+//                intent.putExtra("message", "");
+                intent.putExtra("id",id);
+            }
+            //else  if (type.equals("order_cancel")) {
 //                intent = new Intent(getApplicationContext(), PurchaseHistoryActivity.class);
 //                intent.putExtra("id", id);
 //
@@ -61,14 +69,14 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 //            }else{
 //                intent = new Intent(getApplicationContext(), MainActivity.class);
 //            }
-//            MyNotificationManager mNotificationManager = new MyNotificationManager(getApplicationContext());
-//            //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//
-//            if (imageUrl.equals("null") || imageUrl.equals("")) {
-//                mNotificationManager.showSmallNotification(title, message, intent);
-//            } else {
-//                mNotificationManager.showBigNotification(title, message, imageUrl, intent);
-//            }
+            MyNotificationManager mNotificationManager = new MyNotificationManager(getApplicationContext());
+            //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+
+            if (imageUrl.equals("null") || imageUrl.equals("")) {
+                mNotificationManager.showSmallNotification(title, message, intent);
+            } else {
+                mNotificationManager.showBigNotification(title, message, imageUrl, intent);
+            }
 
             System.out.println("success");
 

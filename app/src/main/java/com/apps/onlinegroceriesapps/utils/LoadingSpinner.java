@@ -18,12 +18,15 @@ public class LoadingSpinner {
     }
 
     public void showLoading(){
-    progress=new Dialog(context);
+        progress=new Dialog(context);
         progress.setContentView(R.layout.common_loading_spinner );
         progress.setCancelable(false);
         progress.setCanceledOnTouchOutside(false);
         progress.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        progress.show();
+        if(!progress.isShowing()){
+            progress.show();
+        }
+
     }
     public void showLoading(String titleData){
         TextView title = progress.findViewById(R.id.title);
