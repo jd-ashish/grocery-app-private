@@ -19,7 +19,7 @@ this app. This app source code is open for all
 
 
 ## App image
-![alt text](https://files.thegammatech.com/upload/grocery/grocery_1.png){ width=50% }
+![alt text](https://files.thegammatech.com/upload/grocery/grocery_1.png)
 ![alt text](https://files.thegammatech.com/upload/grocery/grocery_2.png)
 ![alt text](https://files.thegammatech.com/upload/grocery/grocery_3.png)
 v![alt text](https://files.thegammatech.com/upload/grocery/grocery_4.png)
