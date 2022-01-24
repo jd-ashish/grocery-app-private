@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.apps.onlinegroceriesapps">
+    package="com.apps.onlinegroceriesworld">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -20,31 +20,31 @@
         android:usesCleartextTraffic="true"
         tools:node="merge">
         <activity
-            android:name=".activity.WebViewActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.NotificationActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.NotificationActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SearchActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.profile.UpdateUserProfileActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.profile.UpdateUserProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.order.TrackOrderActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.order.TrackOrderActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.OrdersActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.OrdersActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.order.SuccessActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.order.SuccessActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ProductListActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.ProductListActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ProductDetailsActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.ProductDetailsActivity"
             android:exported="false" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -65,38 +65,38 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".activity.screen.AddressSelectActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.screen.AddressSelectActivity"
             android:exported="false"
             android:label="@string/title_activity_address_select"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.screen.SelectAddressActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.screen.SelectAddressActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.screen.LoginOtpActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.screen.LoginOtpActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activity.screen.LoginPhoneActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.screen.LoginPhoneActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activity.screen.GetStartActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.screen.GetStartActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.LoginActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SplashscreenActivity"
+            android:name="com.apps.onlinegroceriesworld.activity.SplashscreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -147,7 +147,7 @@ See README(https://goo.gl/l4GJaQ) for more.
             android:resource="@color/red" />
 
         <service
-            android:name=".notifications.MyFirebaseMessagingService"
+            android:name="com.apps.onlinegroceriesworld.notifications.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

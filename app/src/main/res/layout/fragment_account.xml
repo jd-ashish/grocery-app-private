@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/circleImageView">
 
-        <com.apps.onlinegroceriesapps.CustomView.CustomViewThreeInOne
+        <com.apps.onlinegroceriesworld.CustomView.CustomViewThreeInOne
             android:id="@+id/order"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,14 +54,14 @@
             app:title_tio="Orders" />
 
         <!--        This function will be upcoming update-->
-        <com.apps.onlinegroceriesapps.CustomView.CustomViewThreeInOne
+        <com.apps.onlinegroceriesworld.CustomView.CustomViewThreeInOne
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone"
             app:left_icon_tio="@drawable/ic_my_details"
             app:title_tio="Details" />
 
-        <com.apps.onlinegroceriesapps.CustomView.CustomViewThreeInOne
+        <com.apps.onlinegroceriesworld.CustomView.CustomViewThreeInOne
             android:id="@+id/notification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
             app:left_icon_tio="@drawable/ic_bell"
             app:title_tio="Notifications" />
 
-        <com.apps.onlinegroceriesapps.CustomView.CustomViewThreeInOne
+        <com.apps.onlinegroceriesworld.CustomView.CustomViewThreeInOne
             android:id="@+id/contact_us"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             app:title_tio="Contact Us" />
 
         <!--        This function will be upcoming update-->
-        <com.apps.onlinegroceriesapps.CustomView.CustomViewThreeInOne
+        <com.apps.onlinegroceriesworld.CustomView.CustomViewThreeInOne
             android:id="@+id/help"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             app:left_icon_tio="@drawable/ic_help_icon"
             app:title_tio="Help" />
 
-        <com.apps.onlinegroceriesapps.CustomView.CustomViewThreeInOne
+        <com.apps.onlinegroceriesworld.CustomView.CustomViewThreeInOne
             android:id="@+id/aboutus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
             app:left_icon_tio="@drawable/ic_about_icon"
             app:title_tio="About Us" />
 
-        <com.apps.onlinegroceriesapps.CustomView.CustomViewThreeInOne
+        <com.apps.onlinegroceriesworld.CustomView.CustomViewThreeInOne
             android:id="@+id/privacy_policy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             app:left_icon_tio="@drawable/ic_about_icon"
             app:title_tio="Privacy Policy" />
 
-        <com.apps.onlinegroceriesapps.CustomView.CustomViewThreeInOne
+        <com.apps.onlinegroceriesworld.CustomView.CustomViewThreeInOne
             android:id="@+id/terms_conditions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

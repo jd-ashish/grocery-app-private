@@ -159,7 +159,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/add_to_cart_one" />
 
-                <com.apps.onlinegroceriesapps.CustomView.CustomViewSingleLineTwoText
+                <com.apps.onlinegroceriesworld.CustomView.CustomViewSingleLineTwoText
                     android:id="@+id/details_cv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -180,7 +180,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/details_cv" />
 
 
-                <com.apps.onlinegroceriesapps.CustomView.CustomViewSingleLineTwoText
+                <com.apps.onlinegroceriesworld.CustomView.CustomViewSingleLineTwoText
                     android:id="@+id/Nutritions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Nutritions" />
 
-                <com.apps.onlinegroceriesapps.CustomView.CustomViewSingleLineTwoText
+                <com.apps.onlinegroceriesworld.CustomView.CustomViewSingleLineTwoText
                     android:id="@+id/caution"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

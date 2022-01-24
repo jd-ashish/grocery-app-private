@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.apps.onlinegroceriesapps.CustomView.MyRadioButton
+<com.apps.onlinegroceriesworld.CustomView.MyRadioButton
     xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/MyCustomRadioButton"
     android:minHeight="40dp"/>

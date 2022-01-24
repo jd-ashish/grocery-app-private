@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView5"
         app:tint="@color/black" />
 
-    <com.apps.onlinegroceriesapps.CustomView.CustomViewCheckOutList
+    <com.apps.onlinegroceriesworld.CustomView.CustomViewCheckOutList
         android:id="@+id/delivery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
         app:left_text_icon_col="@string/select_method"
         app:right_text_col="@string/delivery" />
 
-    <com.apps.onlinegroceriesapps.CustomView.CustomViewCheckOutList
+    <com.apps.onlinegroceriesworld.CustomView.CustomViewCheckOutList
         android:id="@+id/payment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         app:left_text_icon_col="@string/select_payment_options"
         app:right_text_col="@string/payment" />
 
-    <com.apps.onlinegroceriesapps.CustomView.CustomViewCheckOutList
+    <com.apps.onlinegroceriesworld.CustomView.CustomViewCheckOutList
         android:id="@+id/promocode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
         app:left_text_icon_col="Pick Discount"
         app:right_text_col="@string/Promocode" />
 
-    <com.apps.onlinegroceriesapps.CustomView.CustomViewCheckOutList
+    <com.apps.onlinegroceriesworld.CustomView.CustomViewCheckOutList
         android:id="@+id/total_amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
