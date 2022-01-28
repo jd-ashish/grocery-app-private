@@ -4,7 +4,7 @@ public class Constent {
     public static final int OTP_RESEND = 30000;
     public static final boolean live = false;
     public static final String DEFAULT_LOCATION_NAME = "Madhubani";
-    public static final String URL = "http://192.168.29.196:8000/";
+    public static final String URL = "https://grocery.thegammatech.com/";
 //    public static final String BASE_URL = "http://192.168.2.107:8000/api/v1/";
     public static final String BASE_URL = URL+"api/v1/";
 
