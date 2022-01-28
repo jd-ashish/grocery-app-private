@@ -20,6 +20,8 @@ this app. This app source code is open for all
 ## 🔗 APP Site URL
 [Dashboard API URL](https://grocery.thegammatech.com/admin/dashboard)
 
+## 🔗 APP Demo
+[Download app](https://drive.google.com/file/d/1Pqz4wrV9PLNvIUhbbsEsISSTvTw6uFZY/view?usp=sharing)
 ## Login Dashoboard
 
 Login grocery Dashoboard
