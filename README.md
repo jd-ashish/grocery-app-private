@@ -13,7 +13,7 @@ this app. This app source code is open for all
 - User select address via google map
 - UI/UX used
 - Retrofit api used
-- Backend Laravel - (which id not free)
+- Backend Laravel 
 - This is only for android
 - This code is writen in java
 
