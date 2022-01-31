@@ -1,7 +1,7 @@
 
 # World Grocery Android APP
 
-This App is a local ecommers based to buy grocery product form
+This App is a local E-commerce based to buy grocery product form
 this app. This app source code is open for all
 
 
